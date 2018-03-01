@@ -172,7 +172,7 @@ $slider_toggle           = NULL;
 			$thinkup_class_style = ' class="style3"';
 		}
 
-		if ( empty( $thinkup_homepage_sliderswitch ) or $thinkup_homepage_sliderswitch == 'option1' ) {
+		if ( ( current_user_can( 'edit_theme_options' ) and empty( $thinkup_homepage_sliderswitch ) ) or $thinkup_homepage_sliderswitch == 'option1' ) {
 
 			echo '<div id="slider"' . $thinkup_class_style . '><div id="slider-core">',
 			     '<div class="rslides-container"' . $thinkup_data_speed . '><div class="rslides-inner"><ul class="slides">';
@@ -198,7 +198,7 @@ $slider_toggle           = NULL;
 
 // Add ThinkUpSlider Height - Homepage
 function thinkup_input_sliderhomeheight() {
-global $thinkup_homepage_sliderpreset;
+global $thinkup_homepage_sliderswitch;
 global $thinkup_homepage_sliderpresetheight;
 
 	if ( empty( $thinkup_homepage_sliderpresetheight ) ) $thinkup_homepage_sliderpresetheight = '350';
@@ -317,7 +317,7 @@ global $thinkup_homepage_section3_button;
 
 	// Output featured content areas
 	if ( is_front_page() or thinkup_check_ishome() ) {
-		if ( empty( $thinkup_homepage_sectionswitch ) or $thinkup_homepage_sectionswitch == '1' ) {
+		if ( ( current_user_can( 'edit_theme_options' ) and empty( $thinkup_homepage_sectionswitch ) ) or $thinkup_homepage_sectionswitch == '1' ) {
 
 		echo '<div id="section-home"><div id="section-home-inner">';
 

@@ -86,6 +86,9 @@ The following opensource projects, graphics, fonts, API's or other files as list
 	Changelog
 -----------------------------------------------------------------------------
 
+Version 1.1.19
+- Updated: Improved checks for 'edit_theme_options' capability to ensure demo content only displays to site admins.
+
 Version 1.1.18
 - Updated: Various styling fixes.
 

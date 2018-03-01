@@ -1,4 +1,8 @@
 <?php
+
+// define('WP_ALLOW_REPAIR', true);
+
+
 /**
  * As configurações básicas do WordPress
  *
@@ -20,6 +24,8 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', '/Users/reginaldosantos/dev/lab/wordpress/wordpress/wp-content/plugins/wp-super-cache/' );
 define('DB_NAME', 'zrkfcwog3wy1eiq0');
 
 /** Usuário do banco de dados MySQL */
@@ -82,7 +88,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/pt-br:Depura%C3%A7%C3%A3o_no_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* Isto é tudo, pode parar de editar! :) */
 
