@@ -1,6 +1,6 @@
 <?php
 
-// define('WP_ALLOW_REPAIR', true);
+define('WP_ALLOW_REPAIR', true);
 
 
 /**
