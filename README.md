@@ -1,3 +1,0 @@
-# reginaldosantos
-
-My Professional Portfolio
